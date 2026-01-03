@@ -1,0 +1,121 @@
+.main-topsection {
+  width: 100%;
+  padding: 2rem;
+
+  .svg-card {
+    width: 100%;
+    height: 950px;
+    background-color: #0c2e37;
+    border-radius: 50px;
+    clip-path: url(#custom-clip);
+    .inner {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      .left {
+        padding: 2rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        span {
+          width: 80%;
+          font-size: 3rem;
+          font-family: manrope-extrabold;
+          color: #f1f8fe;
+        }
+        .main-image {
+          width: 50%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 0.2rem;
+        }
+        .image {
+          height: 50px;
+          width: 50px;
+          border-radius: 50px;
+          background-color: yellow;
+          position: relative;
+          overflow: hidden;
+          img {
+            position: absolute;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+          }
+        }
+        .main-button {
+          margin-top: 3%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 2rem;
+          button {
+            padding: 0.4rem 1rem;
+            border-radius: 30px;
+            border: none;
+            color: #f4eae1;
+            background-color: #dead44;
+            font-family: manrope-bold;
+          }
+          .add {
+            display: flex;
+            flex-direction: column;
+            //   gap: 0.5rem;
+            h2 {
+              color: #f1f8fe;
+              font-size: 1.5rem;
+            }
+            span {
+              width: fit-content;
+
+              color: #dead44;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+      .right {
+        padding: 2rem;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        //   background-color: red;
+        position: relative;
+
+        .image {
+          width: 100%;
+          // background-color: green;
+
+          img {
+            position: absolute;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    background-color: #416446;
+    padding: 2rem 6rem;
+    gap: 1rem;
+    margin-top: -21%;
+    .botton {
+      button {
+        padding: 0.4rem 1rem;
+        border-radius: 30px;
+        border: 0.1rem solid #f1f8fe;
+        color: #f4eae1;
+        background-color: transparent;
+        font-family: manrope-bold;
+      }
+    }
+  }
+}

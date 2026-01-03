@@ -1,11 +1,13 @@
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
+import TopSection from "./components/TopSection";
 
 const App = () => {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
+      <TopSection />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
