@@ -1,3 +1,4 @@
+import Aboutus from "./components/Aboutus";
 import Navbar from "./components/Navbar";
 import TopSection from "./components/TopSection";
 
@@ -6,6 +7,7 @@ const App = () => {
     <div>
       <Navbar />
       <TopSection />
+      <Aboutus/>
     </div>
   );
 };
