@@ -20,7 +20,11 @@ const Aboutus = () => {
         <button>About Us</button>
         <div className="svg-card">
           <button>Our Mission</button>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 2 14 16">
+          <svg
+            className="bg-shape"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="-4 2 14 16"
+          >
             <path
               d="M-4 2 10 2 10 18-1 18C-1 16 0 16 1 16A1 1 0 00-4 15Zm13 0Q10 2 10 3L10 2m0 16ZL9 18C9 18 10 18 10 17"
               fill="#CD6A4A"

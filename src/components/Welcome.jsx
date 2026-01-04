@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/layout/_welcome.scss";
 import transparentgirl from "../assets/Images/Uniques/transparentgirl.png";
 import transparentboy from "../assets/Images/Uniques/transparentboy.png";

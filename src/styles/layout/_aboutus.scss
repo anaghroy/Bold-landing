@@ -44,6 +44,11 @@
     .svg-card {
       width: 29%;
       position: relative;
+      overflow: hidden;
+      border-radius: 32px;
+      .bg-shape {
+        position: absolute;
+      }
       button {
         width: fit-content;
         margin: 2rem;
@@ -70,8 +75,8 @@
         background-color: #0c2e37;
         border-radius: 50%;
         position: relative;
-        top: -15%;
-        left: 2%;
+        top: 75%;
+        left: 4%;
         .arrow {
           position: absolute;
           top: 30%;
