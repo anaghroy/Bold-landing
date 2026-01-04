@@ -1,190 +1,173 @@
 .main-about {
   width: 100%;
   padding: 2rem;
+  margin-top: 10%;
   .topcontent {
-    width: 100%;
-    padding: 2rem;
-    margin-top: 5%;
-    // background-color: red;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
 
     h1 {
       font-size: 2.5rem;
-      color: #102327;
       font-family: manrope-semibold;
+      color: #102327;
+      line-height: 1.3;
     }
+
     .image {
       width: 10%;
+
       img {
         width: 100%;
-        object-position: center;
-        object-fit: cover;
       }
     }
   }
+
   .main-card {
-    width: 100%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+  }
 
+  /* About Us floating button */
+  .section-btn {
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+    padding: 0.5rem 1.4rem;
+    border-radius: 30px;
+    border: 1px solid #102327;
+    background: transparent;
+    font-family: manrope-medium;
+    color: #102327;
+  }
+
+  /* ===== COMMON CARD ===== */
+  .svg-card,
+  .center-card,
+  .right-card {
+    height: 600px;
+    border-radius: 32px;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 5%;
+  }
+
+  /* ===== SVG CARD ===== */
+  .svg-card {
+    // background: #f1f8fe;
+
+    .bg-shape {
+      position: absolute;
+      inset: 0;
+    }
+
+    img {
+      position: absolute;
+      top: -10%;
+      right: -5%;
+      width: 90%;
+    }
     button {
-      width: 10%;
-      height: 5%;
-      padding: 0.4rem 1rem;
-      border-radius: 30px;
-      border: 0.1rem solid #102327;
-      color: #102327;
       background-color: transparent;
-      font-family: manrope-medium;
+      border: 0.1rem solid #f4eae1;
+      color: #f4eae1;
+      border-radius: 50px;
+      padding: 0.5rem 1rem;
+      position: absolute;
+      z-index: 99;
     }
-    .svg-card {
-      width: 29%;
-      position: relative;
-      overflow: hidden;
-      border-radius: 32px;
-      .bg-shape {
+
+    .icon {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background: #0c2e37;
+
+      .arrow {
         position: absolute;
+        inset: 35%;
       }
-      button {
-        width: fit-content;
-        margin: 2rem;
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 1rem 1.1rem;
-        border: 0.1rem solid #f1f8fe;
-        color: #f1f8fe;
-        background-color: transparent;
-        z-index: 99;
-      }
-      /*First image*/
-      img {
-        position: absolute;
-        right: -5%;
-        top: -4.5%;
-        width: 90%;
-        // background-color: red;
-      }
-      .icon {
-        height: 85px;
-        width: 85px;
-        background-color: #0c2e37;
-        border-radius: 50%;
-        position: relative;
-        top: 75%;
-        left: 4%;
-        .arrow {
-          position: absolute;
-          top: 30%;
-          left: 20%;
-          width: 50%;
-          height: 50%;
-        }
-      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-family: manrope-bold;
+      margin-bottom: 0.8rem;
+    }
+
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  /* ===== CENTER CARD ===== */
+  .center-card {
+    background: #e0ab43;
+
+    img {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      width: 90%;
+    }
+
+    .card-content {
+      margin-top: auto;
+
       p {
-        color: #0c2e37;
+        font-size: 1.6rem;
         font-family: manrope-bold;
-        font-size: 1.7rem;
-        line-height: 1.4;
-        margin-bottom: 1.5rem;
-      }
-      span {
-        color: #102327;
-        font-size: 1rem;
+        margin-bottom: 0.8rem;
       }
     }
-    .center-card {
-      width: 30%;
-      height: 480px;
-      border-radius: 50px;
-      background-color: #e0ab43;
-      position: relative;
+  }
 
-      button {
-        width: fit-content;
-        margin: 2rem;
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 1rem 1.1rem;
-        border: 0.1rem solid #f1f8fe;
-        color: #f1f8fe;
-        background-color: transparent;
-      }
-      /*Second image*/
-      img {
-        position: absolute;
-        right: 5%;
-        top: 18%;
-        width: 90%;
-        // background-color: red;
-      }
-      .text-content {
-        width: fit-content;
-        // background-color: red;
-        margin-top: 130%;
-        p {
-          color: #0c2e37;
-          font-family: manrope-bold;
-          font-size: 1.7rem;
-          line-height: 1.4;
-          margin-bottom: 1.5rem;
-        }
-        span {
-          color: #102327;
-          font-size: 1rem;
-        }
-      }
-    }
-    .right-card {
-      width: 30%;
-      height: 480px;
-      border-radius: 50px;
-      background-color: #416446;
-      position: relative;
+  /* ===== RIGHT CARD ===== */
+  .right-card {
+    background: #416446;
 
-      button {
-        width: fit-content;
-        margin: 2rem;
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 1rem 1.1rem;
-        border: 0.1rem solid #f1f8fe;
-        color: #f1f8fe;
-        background-color: transparent;
-      }
-      /*Third image*/
-      img {
-        position: absolute;
-        right: 1%;
-        bottom: -10%;
-        width: 90%;
-        // background-color: red;
-      }
-      .text-content {
-        width: fit-content;
-        // background-color: red;
-        margin-top: 130%;
-        p {
-          color: #0c2e37;
-          font-family: manrope-bold;
-          font-size: 1.7rem;
-          line-height: 1.4;
-          margin-bottom: 1.5rem;
-        }
-        span {
-          color: #102327;
-          font-size: 1rem;
-        }
+    img {
+      position: absolute;
+      bottom: -8%;
+      right: 2%;
+      width: 90%;
+    }
+
+    .card-content {
+      margin-top: auto;
+
+      p {
+        font-size: 1.6rem;
+        font-family: manrope-bold;
+        margin-bottom: 0.8rem;
       }
     }
+  }
+  /*Gobal variables*/
+  .card-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .card-text {
+    padding-left: 1rem;
+  }
+  button {
+    background-color: transparent;
+    border: 0.1rem solid #f4eae1;
+    color: #f4eae1;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    z-index: 99;
   }
 }
