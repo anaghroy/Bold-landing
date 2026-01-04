@@ -1,5 +1,6 @@
 import Aboutus from "./components/Aboutus";
 import Believe from "./components/Believe";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Potential from "./components/Potential";
 import Testimonial from "./components/Testimonial";
@@ -19,6 +20,7 @@ const App = () => {
       <Believe data1= {data1} data2={data2}/>
       <Testimonial/>
       <Potential/>
+      <Footer/>
     </div>
   );
 };
