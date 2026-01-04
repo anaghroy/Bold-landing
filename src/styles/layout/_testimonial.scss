@@ -1,0 +1,137 @@
+.main-test {
+  width: 100%;
+  padding: 3rem;
+  .outer {
+    width: 100%;
+    background: radial-gradient(#184654, #011318);
+    padding: 2rem;
+    border-radius: 40px;
+    .image1 {
+      width: 120px;
+      height: 120px;
+      border-radius: 60px;
+      box-shadow: 10px 5px 5px #16404c;
+      position: relative;
+      overflow: hidden;
+      left: 5%;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+      }
+    }
+    .image2 {
+      width: 120px;
+      height: 120px;
+      border-radius: 60px;
+      box-shadow: 10px 5px 5px #16404c;
+      position: relative;
+      overflow: hidden;
+      left: 25%;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+      }
+    }
+    .image3 {
+      width: 120px;
+      height: 120px;
+      border-radius: 60px;
+      box-shadow: 10px 5px 5px #16404c;
+      position: relative;
+      overflow: hidden;
+      left: 65%;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+      }
+    }
+    .center-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      button {
+        border-radius: 50px;
+        font-size: 1rem;
+        color: #eef7fa;
+        border: 0.1rem solid #eef7fa;
+        background-color: transparent;
+        padding: 0.5rem 1rem;
+        margin-bottom: 4%;
+      }
+      p {
+        text-align: center;
+        color: #eef7fa;
+        font-size: 2.5rem;
+        font-family: manrope-bold;
+        margin-bottom: 4%;
+      }
+      .image {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+        box-shadow: 10px 5px 5px #16404c;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 1%;
+        img {
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+          position: absolute;
+        }
+      }
+
+      .text {
+        font-size: 1.4rem;
+        margin-bottom: 1%;
+      }
+      span {
+        color: #eef7fa;
+        font-size: 1rem;
+      }
+    }
+    .image4 {
+      width: 120px;
+      height: 120px;
+      border-radius: 60px;
+      box-shadow: 10px 5px 5px #16404c;
+      position: relative;
+      overflow: hidden;
+      left: 25%;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+      }
+    }
+    .image5 {
+      width: 120px;
+      height: 120px;
+      border-radius: 60px;
+      box-shadow: 10px 5px 5px #16404c;
+      position: relative;
+      overflow: hidden;
+      left: 85%;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+      }
+    }
+  }
+}

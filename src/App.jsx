@@ -1,6 +1,7 @@
 import Aboutus from "./components/Aboutus";
 import Believe from "./components/Believe";
 import Navbar from "./components/Navbar";
+import Testimonial from "./components/Testimonial";
 import TopSection from "./components/TopSection";
 import Types from "./components/Types";
 import Welcome from "./components/Welcome";
@@ -15,6 +16,7 @@ const App = () => {
       <Welcome/>
       <Types/>
       <Believe data1= {data1} data2={data2}/>
+      <Testimonial/>
     </div>
   );
 };
