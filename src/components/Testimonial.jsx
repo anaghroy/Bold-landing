@@ -7,7 +7,7 @@ import profile5 from "../assets/Images/Users/profile5.jpg";
 import profile6 from "../assets/Images/Users/profile6.jpg";
 const Testimonial = () => {
   return (
-    <div className="main-test">
+    <div id="resouces" className="main-test">
       <div className="outer">
         <div className="image1">
             <img src={profile1} alt="profile1" />

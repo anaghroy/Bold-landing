@@ -5,7 +5,7 @@ import profile2 from "../assets/Images/Users/profile2.jpg";
 import "../styles/layout/_types.scss";
 const Types = () => {
   return (
-    <div className="main-types">
+    <div id="teams" className="main-types">
       <div className="image">
         <img src={types1} alt="types1" />
       </div>

@@ -42,3 +42,16 @@ body {
   font-family: manrope-extrabold;
   src: url(../assets/Fonts/manrope-extrabold.otf);
 }
+
+/*scrollbar-background*/
+::-webkit-scrollbar {
+  background-color: #000000;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(166, 166, 166, 0.523);
+  border-radius: 50px;
+}
+html {
+  scroll-behavior: smooth;
+}

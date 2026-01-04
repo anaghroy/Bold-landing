@@ -6,7 +6,7 @@ import Illustration3 from "../assets/Images/Card/Full-body.png";
 import { MoveUpRight } from "lucide-react";
 const Aboutus = () => {
   return (
-    <div className="main-about">
+    <div id="about" className="main-about">
       <div className="topcontent">
         <h1>
           Our mission is to provide individuals with

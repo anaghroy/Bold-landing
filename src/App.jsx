@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Aboutus from "./components/Aboutus";
 import Believe from "./components/Believe";
 import Footer from "./components/Footer";
@@ -10,9 +11,10 @@ import Welcome from "./components/Welcome";
 import { data1, data2 } from "./Data/believedata";
 
 const App = () => {
+   const navbarRef = useRef(null);
   return (
     <div>
-      <Navbar />
+      <Navbar navbarRef={navbarRef}/>
       <TopSection />
       <Aboutus/>
       <Welcome/>
