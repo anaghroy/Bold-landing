@@ -6,71 +6,62 @@ import profile2 from "../assets/Images/Users/profile2.jpg";
 import Stylized from "../assets/Images/Stylized1.png";
 const TopSection = () => {
   return (
-    <div className="main-topsection">
-      <div class="svg-card">
-        <svg width="0" height="0" viewBox="0 0 1 1" preserveAspectRatio="none">
+    <section className="main-topsection">
+      <div className="hero-card">
+        {/* clip-path svg */}
+        <svg width="0" height="0">
           <defs>
             <clipPath id="custom-clip" clipPathUnits="objectBoundingBox">
-              <path
-                d="M-0.1538 0.0000 0.3846 0.0000 1.0000 0.0000 1.0000 0.8462 0.5000 0.8462C0.4615 0.8462 0.4231 0.7692 0.4615 0.6923 0.4615 0.6154 0.4615 0.6154 0.3462 0.6154H-0.1538L-0.1538 0.0000
-          "
-              />
+              <path d="M-0.1538 0 1 0 1 0.8462 0.5 0.8462C0.46 0.8462 0.42 0.77 0.46 0.69H-0.1538Z" />
             </clipPath>
           </defs>
         </svg>
-        <div className="inner">
-          <div className="left">
-            <span>
+
+        <div className="hero-inner">
+          {/* LEFT */}
+          <div className="hero-left">
+            <h1>
               Where we empower you to embrace your unique
-              <div className="main-image">
-                <div className="image">
-                  <img src={profile1} alt="profile1" />
-                </div>
-                <div className="image">
-                  <img src={profile5} alt="profile5" />
-                </div>
-                <div className="image">
-                  <img src={profile2} alt="profile2" />
-                </div>
-              </div>
+              <span className="inline-images">
+                <img src={profile1} alt="profile1" />
+                <img src={profile5} alt="profile5" />
+                <img src={profile2} alt="profile2" />
+              </span>
               personality and unleash your full potential
-            </span>
+            </h1>
 
-            <div className="main-button">
-              <button>Start Test</button>
-              <div className="add">
-                <h2>236+</h2>
-                <span>Tests taken today</span>
-              </div>
-              <div className="add">
-                <h2>95%</h2>
-                <span>Results rated</span>
+            <div className="hero-actions">
+              <button className="primary-btn">Start Test</button>
+
+              <div className="stats">
+                <div>
+                  <h3>236+</h3>
+                  <span>Tests taken today</span>
+                </div>
+                <div>
+                  <h3>95%</h3>
+                  <span>Results rated</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="right">
-            <div className="outer-image">
-              <div className="image">
-                <img src={Stylized} alt="Stylized" />
-              </div>
-            </div>
+          {/* RIGHT */}
+          <div className="hero-right">
+            <img src={Stylized} alt="illustration" />
           </div>
         </div>
       </div>
-      <div className="bottom">
-        <div className="botton">
-          <button>Bold personality</button>
-        </div>
-        <div className="botton">
-          <button>Self-discovery</button>
-        </div>
-        <div className="botton">
-          <button>Personal growth</button>
-        </div>
+
+      {/* BOTTOM TAGS */}
+      <div className="hero-tags">
+        <button>Bold personality</button>
+        <button>Self-discovery</button>
+        <button>Personal growth</button>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default TopSection;
+
